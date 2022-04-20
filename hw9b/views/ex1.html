@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Gaignard - HW9b - Exercise 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="/">Back To Homepage</a>
+    <h1>Sample Form</h1>
+    <form onsubmit="event.preventDefault(); displayKey()">
+        <label>Name: <input type="text" name="name" id="name"></label>
+        <br>
+        <label>Email: <input type="text" name="email" id="email"></label>
+        <div class="radioInput">
+            <input type="radio" name="paymentType" id="cash" value="cash">
+            <label for="cash">Cash</label>
+            <br>
+            <input type="radio" name="paymentType" id="creditCard" value="creditCard">
+            <label for="creditCard">Credit Card</label>
+            <br>
+            <input type="radio" name="paymentType" id="googlePay" value="googlePay">
+            <label for="googlePay">Google Pay</label>
+            <br>
+            <input type="radio" name="paymentType" id="applePay" value="applePay">
+            <label for="applePay">Apple Pay</label>
+        </div>
+        <input type="checkbox" name="promotion" id="promotion">
+        <label for="promotion">Sign me up for special promotion</label>
+        <br>
+        <p>Preferred Location: </p>
+        <select name="location" id="location">
+            <option value="oc">Orange County</option>
+            <option value="lac">LA County</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+    <br>
+    <table id="table">
+    </table>
+    <script src="ex1.js"></script>
+</body>
+</html>

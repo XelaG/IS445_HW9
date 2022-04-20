@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Gaignard - HW9b - Exercise 3</title>
+</head>
+<body>
+    <a href="/">Back To Homepage</a>
+    <h1>Alex's countries API call</h1>
+    <h2>Add a new article</h2>
+    <form onsubmit="event.preventDefault(); addArticle()">
+        <label>Title: <input type="text" name="title" id="title"></label>
+        <br>
+        <label for="content">Content: </label>
+        <br>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Add</button>
+    </form>
+    <div id="response">
+
+    </div>
+    <script src="ex3.js"></script>
+</body>
+</html>

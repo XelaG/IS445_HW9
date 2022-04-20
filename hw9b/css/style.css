@@ -1,0 +1,19 @@
+* {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table, th, td, tr {
+    border: black solid 1px;
+}
+
+th, td {
+    padding: 0 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgray;
+}
